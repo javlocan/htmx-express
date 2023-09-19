@@ -4,7 +4,7 @@
   "description": "Trying stuff",
   "main": "api/index.js",
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node main/index.js",
