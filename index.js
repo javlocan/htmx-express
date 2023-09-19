@@ -36,3 +36,5 @@ app.get("/nav/home", (req, res) => {
 app.get("/nav/about", (req, res) => {
   res.sendFile("/nav/about/index.html", { root: __appdir });
 });
+
+module.exports = app;
