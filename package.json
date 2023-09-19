@@ -7,8 +7,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node main/index.js",
-    "dev": "nodemon main/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "javlocan.dev",
   "license": "ISC",
