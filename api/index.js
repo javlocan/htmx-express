@@ -16,7 +16,11 @@ app.use(express.static(path.dirname(__dirname) + "/public/"));
 const __appdir = path.dirname(__dirname) + "/app";
 
 // routes
-
+app.get("/api", (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
+  res.redirect("/");
+});
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: __appdir });
 });
