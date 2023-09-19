@@ -1,0 +1,15 @@
+{
+  "name": "htmx-express",
+  "version": "1.0.0",
+  "description": "Trying stuff",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "nodemon main/index.js"
+  },
+  "author": "javlocan.dev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {}
+}
