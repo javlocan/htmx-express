@@ -4,10 +4,10 @@ require("dotenv").config();
 // server setup
 
 const app = express();
+const port = process.env.PORT || 3000;
 
-app.listen(process.env.PORT, () => {
-  console.log("Server is listening on port " + process.env.PORT);
-  console.log("Path is ", __dirname);
+app.listen(port, () => {
+  console.log("Server is listening on port " + port);
 });
 
 app.use(express.static(__dirname + "/public/"));
